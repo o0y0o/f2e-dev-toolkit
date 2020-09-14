@@ -6,9 +6,9 @@ Common ESLint configs.
 
 Check out the following links to see more detail.
 
-| Platform | Package | Version |
-| -------- | ------- | ------- |
-| Browser  | [@0y0/eslint-config-vanilla](https://github.com/o0y0o/eslint-configs/tree/master/packages/vanilla) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-vanilla.svg)](https://www.npmjs.com/package/@0y0/eslint-config-vanilla) |
+| Preset  | Package | Version |
+| ------- | ------- | ------- |
+| Vanilla | [@0y0/eslint-config-vanilla](https://github.com/o0y0o/eslint-configs/tree/master/packages/vanilla) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-vanilla.svg)](https://www.npmjs.com/package/@0y0/eslint-config-vanilla) |
 
 ## License
 
