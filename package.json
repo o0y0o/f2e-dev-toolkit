@@ -18,6 +18,7 @@
   "scripts": {
     "ncu": "lerna exec ncu",
     "format": "lerna run format",
+    "v": "lerna version",
     "pkg": "lerna publish"
   },
   "devDependencies": {
