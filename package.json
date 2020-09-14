@@ -18,8 +18,7 @@
   "scripts": {
     "ncu": "lerna exec ncu",
     "format": "lerna run format",
-    "v": "lerna version",
-    "pkg": "lerna publish"
+    "pkg": "lerna publish from-package --yes"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
