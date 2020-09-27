@@ -15,10 +15,13 @@
   "scripts": {
     "ncu": "ncu && lerna exec ncu",
     "format": "lerna run format",
+    "test": "lerna run test",
     "ver": "lerna version --no-push && git tag | xargs git tag -d",
     "pkg": "lerna publish from-package --yes"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
     "lerna": "^3.22.1",
     "prettier": "^2.1.2"
   }
