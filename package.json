@@ -15,7 +15,7 @@
   "scripts": {
     "ncu": "ncu && lerna exec ncu",
     "format": "lerna run format",
-    "ver": "lerna version --no-push",
+    "ver": "lerna version --no-push && git tag | xargs git tag -d",
     "pkg": "lerna publish from-package --yes"
   },
   "devDependencies": {

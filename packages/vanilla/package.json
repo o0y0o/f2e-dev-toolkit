@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-config-vanilla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common ESLint config for Vanilla JS.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/eslint-config",
