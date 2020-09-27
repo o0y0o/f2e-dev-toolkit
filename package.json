@@ -13,8 +13,9 @@
     "react"
   ],
   "scripts": {
-    "ncu": "lerna exec ncu",
+    "ncu": "ncu && lerna exec ncu",
     "format": "lerna run format",
+    "ver": "lerna version --no-push",
     "pkg": "lerna publish from-package --yes"
   },
   "devDependencies": {
