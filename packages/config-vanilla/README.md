@@ -5,7 +5,7 @@
 ## Intsallation
 
 ```sh
-npm install @0y0/eslint-config-vanilla --save
+npm install @0y0/eslint-config-vanilla --save-dev
 ```
 
 ## Usage

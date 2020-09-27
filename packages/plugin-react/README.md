@@ -5,7 +5,7 @@
 ## Intsallation
 
 ```sh
-npm install @0y0/eslint-plugin-react --save
+npm install @0y0/eslint-plugin-react --save-dev
 ```
 
 ## Usage
