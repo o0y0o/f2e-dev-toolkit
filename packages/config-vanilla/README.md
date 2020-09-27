@@ -9,6 +9,7 @@ npm install @0y0/eslint-config-vanilla --save
 ```
 
 ## Usage
+
 ```js
 {
   "extends": "@0y0/eslint-config-vanilla" // or `@0y0/vanilla`

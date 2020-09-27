@@ -1,0 +1,22 @@
+{
+  "name": "@0y0/eslint-plugin-react",
+  "version": "1.2.2",
+  "description": "Common ESLint plugin for React.",
+  "main": "index.js",
+  "repository": "https://github.com/o0y0o/eslint-configs",
+  "author": "Jason Chung <shiningjason1989@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "/lib"
+  ],
+  "scripts": {
+    "format": "prettier --write \"{*,lib/**/*}.js\"",
+    "test": "node test.js"
+  },
+  "peerDependencies": {
+    "eslint": ">=7.0.0"
+  }
+}
