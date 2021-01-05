@@ -1,6 +1,6 @@
 # o0y0o/f2e-dev-toolkit · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/f2e-dev-toolkit/blob/master/LICENSE) ![Status](https://github.com/o0y0o/f2e-dev-toolkit/workflows/Package/badge.svg)
 
-Common ESLint configs.
+Common front-end dev toolkit.
 
 ## Documents
 
