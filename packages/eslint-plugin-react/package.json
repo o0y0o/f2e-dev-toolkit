@@ -3,7 +3,7 @@
   "version": "1.2.3",
   "description": "Common ESLint plugin for React.",
   "main": "index.js",
-  "repository": "https://github.com/o0y0o/eslint-configs",
+  "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
   "publishConfig": {

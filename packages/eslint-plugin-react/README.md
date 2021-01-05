@@ -1,4 +1,4 @@
-# @0y0/eslint-plugin-react · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/eslint-configs/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/eslint-plugin-react.svg)](https://www.npmjs.com/package/@0y0/eslint-plugin-react)
+# @0y0/eslint-plugin-react · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/f2e-dev-toolkit/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/@0y0/eslint-plugin-react.svg)](https://www.npmjs.com/package/@0y0/eslint-plugin-react)
 
 `@0y0/eslint-plugin-react` is a common ESLint plugin for React.
 
@@ -20,4 +20,4 @@ npm install @0y0/eslint-plugin-react --save-dev
 
 ## License
 
-[MIT](https://github.com/o0y0o/eslint-configs/blob/master/LICENSE)
+[MIT](https://github.com/o0y0o/f2e-dev-toolkit/blob/master/LICENSE)
