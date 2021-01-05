@@ -8,8 +8,8 @@ Check out the following links to see more detail.
 
 | Preset  | Package | Version |
 | ------- | ------- | ------- |
-| Config/Vanilla | [@0y0/eslint-config-vanilla](https://github.com/o0y0o/eslint-configs/tree/master/packages/config-vanilla) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-vanilla.svg)](https://www.npmjs.com/package/@0y0/eslint-config-vanilla) |
-| Plugin/React | [@0y0/eslint-plugin-react](https://github.com/o0y0o/eslint-configs/tree/master/packages/plugin-react) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-plugin-react.svg)](https://www.npmjs.com/package/@0y0/eslint-plugin-react) |
+| Config/Vanilla | [@0y0/eslint-config-vanilla](https://github.com/o0y0o/eslint-configs/tree/master/packages/eslint-config-vanilla) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-vanilla.svg)](https://www.npmjs.com/package/@0y0/eslint-config-vanilla) |
+| Plugin/React | [@0y0/eslint-plugin-react](https://github.com/o0y0o/eslint-configs/tree/master/packages/eslint-plugin-react) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-plugin-react.svg)](https://www.npmjs.com/package/@0y0/eslint-plugin-react) |
 
 ## License
 
