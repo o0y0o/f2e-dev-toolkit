@@ -1,7 +1,7 @@
 {
-  "name": "@0y0/eslint-config-vanilla",
-  "version": "1.1.1",
-  "description": "Common ESLint config for Vanilla JS.",
+  "name": "@0y0/eslint-config-react",
+  "version": "1.0.0",
+  "description": "Common ESLint config for React.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
@@ -12,20 +12,22 @@
   "keywords": [
     "eslint",
     "web",
-    "nodejs",
-    "vanilla",
+    "react",
     "clean-code"
   ],
   "scripts": {
     "format": "prettier --write index.js"
   },
   "dependencies": {
+    "@0y0/eslint-plugin-react": "^1.2.4",
     "@babel/eslint-parser": "^7.12.1",
     "eslint-config-prettier": "^7.1.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
     "eslint-plugin-standard": "^4.0.2"
   },
   "peerDependencies": {

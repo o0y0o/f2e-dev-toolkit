@@ -2,7 +2,7 @@
 
 `@0y0/eslint-config-vanilla` is a common ESLint config for Vanilla JS.
 
-## Intsallation
+## Installation
 
 ```sh
 npm install @0y0/eslint-config-vanilla --save-dev
