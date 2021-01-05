@@ -1,5 +1,6 @@
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: { requireConfigFile: false },
   extends: ['standard', 'prettier'],
   plugins: ['import'],
   rules: {
