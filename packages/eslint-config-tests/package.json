@@ -1,7 +1,7 @@
 {
-  "name": "@0y0/eslint-config-vanilla",
-  "version": "1.1.1",
-  "description": "Common ESLint config for Vanilla JS.",
+  "name": "@0y0/eslint-config-tests",
+  "version": "1.0.0",
+  "description": "Common ESLint config for test scripts.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
@@ -13,7 +13,7 @@
     "eslint",
     "web",
     "nodejs",
-    "vanilla",
+    "tests",
     "clean-code"
   ],
   "scripts": {

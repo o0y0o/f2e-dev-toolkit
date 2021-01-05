@@ -2,7 +2,7 @@
 
 `@0y0/eslint-plugin-react` is a common ESLint plugin for React.
 
-## Intsallation
+## Installation
 
 ```sh
 npm install @0y0/eslint-plugin-react --save-dev
