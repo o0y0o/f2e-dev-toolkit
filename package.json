@@ -1,8 +1,8 @@
 {
-  "name": "@0y0/eslint-configs",
+  "name": "@0y0/f2e-dev-toolkit",
   "version": "1.0.0",
-  "description": "Common ESLint configs.",
-  "repository": "https://github.com/o0y0o/eslint-config",
+  "description": "Common front-end dev toolkit.",
+  "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
   "private": true,
