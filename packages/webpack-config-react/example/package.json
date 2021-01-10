@@ -1,0 +1,23 @@
+{
+  "name": "webpack-config-react-example",
+  "version": "1.0.0",
+  "description": "A React example app to demo @0y0/webpack-config-react.",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rm -rf dist",
+    "build": "NODE_ENV=production webpack",
+    "dev": "webpack serve",
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.6"
+  },
+  "devDependencies": {
+    "@0y0/babel-preset-react": "file:../../babel-preset-react",
+    "@0y0/webpack-config-react": "file:../",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "webpack-cli": "^4.3.1"
+  }
+}
