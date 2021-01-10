@@ -54,7 +54,7 @@ yarn dev
 yarn build
 ```
 
-Check out [webpack.config.js](./webpack.config.js) to learn how to setup `@0y0/webpack-config-react`.
+Check out [webpack.config.js](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/webpack-config-react/example/webpack.config.js) to learn how to setup `@0y0/webpack-config-react`.
 
 ### Run Production Server
 

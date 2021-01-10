@@ -40,7 +40,7 @@ const webpackConfig = createWebpackConfig(options)
 | **`port`** | `number` | `8080` | Dev server port |
 | **`proxy`** | `object` | | Dev server proxy. See [webpack doc](https://webpack.js.org/configuration/dev-server/#devserverproxy) for details |
 
-Check out the [example app](./example) to see more details.
+Check out the [example app](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/webpack-config-react/example) to see more details.
 
 ## License
 
