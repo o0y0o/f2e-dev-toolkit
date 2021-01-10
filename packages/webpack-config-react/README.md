@@ -12,31 +12,35 @@ npm install @0y0/webpack-config-react --save-dev
 
 ```js
 const createWebpackConfig = require('@0y0/webpack-config-react')
-const webpackConfig = createWebpackConfig({
-  isDev, // [boolean] whether or not development environment (default: true)
-  appName, // [string] application name (required)
-  rootDir, // [string] project directory (required)
-  srcDir, // [string] source directory (default: {rootDir}/src)
-  distDir, // [string] distribution directory (default: {rootDir}/dist)
-  staticDir, // [string] static directory (default: {srcDir}/static)
-  jsChunks, // [object] js entries (default: { app: {srcDir}/index.js })
-  htmlChunks, // [object] html entries (default: { app: {srcDir}/index.html })
-  publicPath, // [string] public path (default: /)
-  assetPath, // [string] asset path (default: /)
-  serviceWorkerPath, // [string] service worker path (default: /sw.js)
-  resolveAlias, // [object] module aliases (doc: https://webpack.js.org/plugins/split-chunks-plugin/#splitchunkscachegroups)
-  chunkGroups, // [object] cache groups config of split chunk plugin (doc: https://webpack.js.org/plugins/split-chunks-plugin/#splitchunkscachegroups)
-  variables, // [object] global variables (default: {})
-  workboxOptions, // [object] workbox options (doc: https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW#GenerateSW)
-  useSourceMap, // [boolean] enable source map (default: false)
-  useWebpackAnalyzer, // [boolean] enable webpack-bundle-analyzer plugin (default: false)
-  host, // [string] dev server host (default: localhost)
-  port, // [number] dev server port (default: 8080)
-  proxy // [object] dev server proxy (doc: https://webpack.js.org/configuration/dev-server/#devserverproxy)
-})
+const webpackConfig = createWebpackConfig(options)
 ```
 
-Check out the [example app](./example) to see more details.
+### Options
+
+| Name | Type | Default | Description |
+| ---- | ---- | ------- | ----------- |
+| **`isDev`** | `boolean` | `true` | Whether or not development environment |
+| **`appName`** | `string` (required) | | Application name |
+| **`rootDir`** | `string` (required) | | Project directory |
+| **`srcDir`** | `string` | `{rootDir}/src` | Source directory |
+| **`distDir`** | `string` | `{rootDir}/dist` | Distribution directory |
+| **`staticDir`** | `string` | `{rootDir}/src/static` | Static directory |
+| **`jsChunks`** | `object` | `{ app: '{rootDir}/src/index.js' }` | JS entries |
+| **`htmlChunks`** | `object` | `{ app: '{rootDir}/src/index.html' }` | HTML entries |
+| **`publicPath`** | `string` | `/` | Public path |
+| **`assetPath`** | `string` | `/` | Asset path |
+| **`serviceWorkerPath`** | `string` | `/sw.js` | Service worker path |
+| **`resolveAlias`** | `object` | | Module aliases. See [webpack doc](https://webpack.js.org/configuration/resolve/#resolvealias) for details |
+| **`chunkGroups`** | `object` | | Cache groups config of split chunk plugin. See [webpack doc](https://webpack.js.org/plugins/split-chunks-plugin/#splitchunkscachegroups) for details |
+| **`variables`** | `object` | `{}` | Global variables |
+| **`workboxOptions`** | `object` | | Workbox options. See [workbox doc](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW#GenerateSW) for details |
+| **`useSourceMap`** | `boolean` | `false` | Whether or not enable source map |
+| **`useWebpackAnalyzer`** | `boolean` | `false` | Whether or not enable webpack-bundle-analyzer plugin |
+| **`host`** | `string` | `localhost` | Dev server host |
+| **`port`** | `number` | `8080` | Dev server port |
+| **`proxy`** | `object` | | Dev server proxy. See [webpack doc](https://webpack.js.org/configuration/dev-server/#devserverproxy) for details |
+
+Check out the [example app](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/webpack-config-react/example) to see more details.
 
 ## License
 
