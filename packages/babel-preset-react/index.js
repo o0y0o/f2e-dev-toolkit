@@ -33,23 +33,23 @@ module.exports = (_, { moduleAlias = defaultModuleAlias }) => ({
       require.resolve('babel-plugin-transform-imports'),
       {
         'lodash/fp': {
-          transform: 'lodash/fp/${member}',
+          transform: 'lodash/fp/${member}', // eslint-disable-line no-template-curly-in-string
           preventFullImport: true
         },
         lodash: {
-          transform: 'lodash/${member}',
+          transform: 'lodash/${member}', // eslint-disable-line no-template-curly-in-string
           preventFullImport: true
         },
         ramda: {
-          transform: 'ramda/src/${member}',
+          transform: 'ramda/src/${member}', // eslint-disable-line no-template-curly-in-string
           preventFullImport: true
         },
         'redux-actions': {
-          transform: 'redux-actions/lib/${member}',
+          transform: 'redux-actions/lib/${member}', // eslint-disable-line no-template-curly-in-string
           preventFullImport: true
         },
         'react-icons': {
-          transform: 'react-icons/${member}',
+          transform: 'react-icons/${member}', // eslint-disable-line no-template-curly-in-string
           preventFullImport: true
         }
       }
