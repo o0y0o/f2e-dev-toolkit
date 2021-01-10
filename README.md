@@ -15,6 +15,7 @@ Check out the following links to see more detail.
 | ESLint Config / Tests | [@0y0/eslint-config-tests](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/eslint-config-tests) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-tests.svg)](https://www.npmjs.com/package/@0y0/eslint-config-tests) |
 | ESLint Config / React | [@0y0/eslint-config-react](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/eslint-config-react) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-config-react.svg)](https://www.npmjs.com/package/@0y0/eslint-config-react) |
 | ESLint Plugin / React | [@0y0/eslint-plugin-react](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/eslint-plugin-react) | [![npm](https://img.shields.io/npm/v/@0y0/eslint-plugin-react.svg)](https://www.npmjs.com/package/@0y0/eslint-plugin-react) |
+| Webpack Config / React | [@0y0/webpack-config-react](https://github.com/o0y0o/f2e-dev-toolkit/tree/master/packages/webpack-config-react) | [![npm](https://img.shields.io/npm/v/@0y0/webpack-config-react.svg)](https://www.npmjs.com/package/@0y0/webpack-config-react) |
 
 ## License
 
