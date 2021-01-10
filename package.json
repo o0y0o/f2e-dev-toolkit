@@ -15,11 +15,14 @@
   "scripts": {
     "ncu": "ncu && lerna exec ncu",
     "format": "lerna run format",
+    "lint": "lerna run lint",
     "test": "lerna run test",
     "ver": "lerna version --no-push && git tag | xargs git tag -d",
     "pkg": "lerna publish from-package --yes"
   },
   "devDependencies": {
+    "@0y0/eslint-config-vanilla": "file:./packages/eslint-config-vanilla",
+    "@babel/core": "7.12.10",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.17.0",
     "lerna": "^3.22.1",
