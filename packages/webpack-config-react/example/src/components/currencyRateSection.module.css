@@ -1,0 +1,11 @@
+.sectionTitle {
+  display: flex;
+  align-items: center;
+}
+
+.sectionIcon {
+  margin-right: 8px;
+  width: 36px;
+  height: 36px;
+  background: url('@src/images/money.png') center/cover no-repeat;
+}
