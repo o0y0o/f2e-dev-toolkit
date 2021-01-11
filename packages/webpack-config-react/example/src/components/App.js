@@ -1,4 +1,4 @@
-import CurrencyRateSection from '@components/CurrencyRateSection'
+import CurrencyRateSection from '@src/components/CurrencyRateSection'
 
 export default function App() {
   return (

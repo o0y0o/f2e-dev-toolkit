@@ -10,7 +10,12 @@ example
 ├── node_modules
 ├── src
 │   ├── components
-│   │   └── App.js
+│   │   ├── *.js
+│   │   └── *.module.css
+│   ├── fonts
+│   │   └── *.ttf
+│   ├── images
+│   │   └── *.png
 │   ├── static
 │   │   ├── assets
 │   │   │   ├── apple-icon.png
@@ -26,9 +31,12 @@ example
     │   │   └── *.css
     │   ├── js
     │   │   └── *.js
+    │   ├── media
+    │   │   └── *.(ttf|png)
     │   ├── apple-icon.png
     │   └── favicon.ico
     ├── manifest.json
+    ├── asset-manifest.json
     ├── sw.js
     ├── index.html
     └── 404.html

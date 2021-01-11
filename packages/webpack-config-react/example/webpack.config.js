@@ -7,7 +7,6 @@ const rootDir = __dirname
 const srcDir = path.join(rootDir, 'src')
 const distDir = path.join(rootDir, 'dist')
 const staticDir = path.join(srcDir, 'static')
-const componentDir = path.join(srcDir, 'components')
 const indexJs = path.join(srcDir, 'index.js')
 const indexHtml = path.join(srcDir, 'index.html')
 const _404Html = path.join(srcDir, '404.html')
@@ -29,7 +28,7 @@ module.exports = createWebpackConfig({
   publicPath,
   assetPath,
   serviceWorkerPath,
-  resolveAlias: { '@components': componentDir },
+  resolveAlias: { '@src': srcDir },
   chunkGroups: {
     app: { test: /[\\/]src[\\/]/, enforce: true },
     vendors: { test: /[\\/]node_modules[\\/]/, enforce: true }
@@ -55,7 +54,7 @@ module.exports = createWebpackConfig({
       }
     ]
   },
-  useSourceMap: false,
+  useSourceMap: true,
   useWebpackAnalyzer: false,
   host: 'localhost',
   port: 8080,

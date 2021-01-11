@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import css from './currencyRateSection.module.css'
 
 function fetchCurrencyRates() {
   return fetch('/api/currency-rates').then(res => res.json())
@@ -33,7 +34,10 @@ function CurrencyRateDetail() {
 export default function CurrencyRateSection() {
   return (
     <section>
-      <h2>Currency Rates</h2>
+      <div className={css.sectionTitle}>
+        <i className={css.sectionIcon} />
+        <h2>Currency Rates</h2>
+      </div>
       <CurrencyRateDetail />
     </section>
   )

@@ -1,7 +1,7 @@
 module.exports = function ({ isDev, distDir, assetPath, publicPath }) {
   if (isDev) {
     return {
-      filename: `${assetPath}js/bundle.js`,
+      filename: `${assetPath}js/[name].bundle.js`,
       chunkFilename: `${assetPath}js/[name].chunk.js`,
       publicPath
     }
