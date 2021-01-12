@@ -12,7 +12,7 @@ function CurrencyRateDetail() {
     fetchCurrencyRates().then(setData)
   }, [])
 
-  if (!data) return <div>Loading...</div>
+  if (!data) return <div>Loading Data...</div>
   return (
     <div>
       <div>
