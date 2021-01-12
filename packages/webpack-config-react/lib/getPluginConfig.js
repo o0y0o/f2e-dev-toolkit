@@ -10,7 +10,7 @@ const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin')
 const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const ManifestPlugin = require('webpack-manifest-plugin')
+const ManifestPlugin = require('webpack-manifest-plugin').WebpackManifestPlugin
 const WorkboxPlugin = require('workbox-webpack-plugin')
 const getHtmlMinifierConfig = require('./getHtmlMinifierConfig')
 
@@ -30,8 +30,8 @@ function stringifyObject(input) {
 
 function getCssExtractPlugin({ assetPath }) {
   return new MiniCssExtractPlugin({
-    filename: `${assetPath}css/[name].[contenthash:8].css`,
-    chunkFilename: `${assetPath}css/[name].[contenthash:8].chunk.css`
+    filename: `${assetPath}css/[name].[contenthash].css`,
+    chunkFilename: `${assetPath}css/[name].[contenthash].chunk.css`
   })
 }
 
@@ -73,10 +73,13 @@ module.exports = function ({
         })
     ),
     new InterpolateHtmlPlugin(HtmlPlugin, { PUBLIC_PATH: publicPath }),
-    new ManifestPlugin({ fileName: 'asset-manifest.json', publicPath }),
+    new ManifestPlugin({ fileName: 'asset-manifest.json' }),
     new ModuleNotFoundPlugin(rootDir),
     new webpack.DefinePlugin(stringify(variables)),
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.IgnorePlugin({
+      resourceRegExp: /^\.\/locale$/,
+      contextRegExp: /moment$/
+    }),
     new CopyPlugin({ patterns: [staticDir] })
   ]
   if (isDev) {
