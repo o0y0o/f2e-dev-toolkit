@@ -27,15 +27,9 @@
     babel-plugin-transform-imports "^2.0.0"
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
-"@0y0/type@":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@0y0/type/-/type-1.0.1.tgz#da41ffcacc19395b74abe823b0fe0995307218cb"
-  integrity sha512-ljBosKz6gZQ8E8FyV/rGTbtE4TNP5ziBpk4UX42vFP1sRxBdjCc8GEzmi5Z4qlXHGlMFkBbweC29IkiR7kvGvQ==
-
 "@0y0/webpack-config-react@file:..":
-  version "1.0.2"
+  version "1.0.3"
   dependencies:
-    "@0y0/type" ""
     "@pmmmwh/react-refresh-webpack-plugin" "~0.4.3"
     babel-loader "^8.2.2"
     cache-loader "^4.1.0"
