@@ -46,7 +46,7 @@ module.exports = function ({
     output: getOutputConfig({ isDev, distDir, publicPath, assetPath }),
     optimization: getOptimizationConfig({ isDev, chunkGroups, useSourceMap }),
     resolve: getResolveConfig({ resolveAlias }),
-    module: getModuleConfig({ isDev, srcDir, assetPath, useSourceMap }),
+    module: getModuleConfig({ isDev, srcDir, useSourceMap }),
     plugins: getPluginConfig({
       isDev,
       appName,

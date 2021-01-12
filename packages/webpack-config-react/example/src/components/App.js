@@ -1,4 +1,8 @@
-import CurrencyRateSection from '@src/components/CurrencyRateSection'
+import { lazy, Suspense } from 'react'
+
+const CurrencyRateSection = lazy(() =>
+  import('@src/components/CurrencyRateSection')
+)
 
 export default function App() {
   return (
@@ -6,7 +10,9 @@ export default function App() {
       <h1>webpack-config-react-example</h1>
       <p>A React example app to demo @0y0/webpack-config-react.</p>
       <hr />
-      <CurrencyRateSection />
+      <Suspense fallback={<div>Loading Component...</div>}>
+        <CurrencyRateSection />
+      </Suspense>
     </div>
   )
 }
