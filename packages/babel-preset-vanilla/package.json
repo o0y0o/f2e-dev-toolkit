@@ -1,6 +1,6 @@
 {
   "name": "@0y0/babel-preset-vanilla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common Babel preset for Vanilla JS.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
