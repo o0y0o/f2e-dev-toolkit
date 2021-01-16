@@ -6,12 +6,6 @@
   "author": "Jason Chung <shiningjason1989@gmail.com>",
   "license": "MIT",
   "private": true,
-  "keywords": [
-    "eslint",
-    "web",
-    "nodejs",
-    "react"
-  ],
   "scripts": {
     "ncu": "ncu && lerna exec ncu",
     "format": "lerna run format",
