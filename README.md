@@ -1,4 +1,4 @@
-# o0y0o/f2e-dev-toolkit · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/f2e-dev-toolkit/blob/master/LICENSE) ![Status](https://github.com/o0y0o/f2e-dev-toolkit/workflows/Package/badge.svg)
+# o0y0o/f2e-dev-toolkit · [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/o0y0o/f2e-dev-toolkit/blob/master/LICENSE) ![Package Status](https://github.com/o0y0o/f2e-dev-toolkit/workflows/Package/badge.svg) ![Test Status](https://github.com/o0y0o/f2e-dev-toolkit/workflows/Test/badge.svg)
 
 Common front-end dev toolkit.
 
