@@ -8,7 +8,6 @@ function getJsRule({ isDev, srcDir }) {
     test: /\.jsx?$/,
     include: srcDir,
     use: [
-      require.resolve('cache-loader'),
       {
         loader: require.resolve('babel-loader'),
         options: {
