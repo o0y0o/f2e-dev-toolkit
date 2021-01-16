@@ -2,7 +2,7 @@
 
 Common front-end dev toolkit.
 
-## Documents
+## Packages
 
 Check out the following links to see more detail.
 
