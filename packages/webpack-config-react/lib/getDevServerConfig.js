@@ -6,8 +6,8 @@ module.exports = function ({ publicPath, host, port, proxy }) {
   return {
     stats: getStatsConfig(),
     contentBase: false,
-    host: host || '0.0.0.0',
-    port: parseInt(port, 10) || 3000,
+    host,
+    port: parseInt(port, 10),
     proxy,
     publicPath,
     historyApiFallback: true,
