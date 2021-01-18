@@ -1,4 +1,3 @@
-const path = require('path')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin')
 const CleanPlugin = require('clean-webpack-plugin').CleanWebpackPlugin
@@ -7,7 +6,6 @@ const HtmlPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin')
-const WatchMissingNodeModulesPlugin = require('react-dev-utils/WatchMissingNodeModulesPlugin')
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 const ManifestPlugin = require('webpack-manifest-plugin').WebpackManifestPlugin
@@ -84,7 +82,6 @@ module.exports = function ({
   ]
   if (isDev) {
     plugins.push(
-      new WatchMissingNodeModulesPlugin(path.join(rootDir, 'node_modules')),
       new webpack.HotModuleReplacementPlugin(),
       new ReactRefreshWebpackPlugin()
     )
