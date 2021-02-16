@@ -18,7 +18,7 @@
     "@0y0/babel-preset-react": "file:./packages/babel-preset-react",
     "@0y0/eslint-config-react": "file:./packages/eslint-config-react",
     "@0y0/eslint-config-vanilla": "file:./packages/eslint-config-vanilla",
-    "@babel/core": "^7.12.13",
+    "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
     "eslint": "^7.20.0",
     "lerna": "^3.22.1",
