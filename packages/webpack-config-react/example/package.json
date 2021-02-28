@@ -18,7 +18,10 @@
     "@0y0/webpack-config-react": "file:../",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "webpack-cli": "^4.4.0",
+    "webpack-cli": "^4.5.0",
     "webpack-dev-server": "^3.11.2"
+  },
+  "resolutions": {
+    "@0y0/webpack-config-vanilla": "file:../../webpack-config-vanilla"
   }
 }
