@@ -1,6 +1,6 @@
 {
   "name": "@0y0/babel-preset-antd",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Common Babel preset for AntDesign.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -21,10 +21,7 @@
     "lint": "eslint \"index.js\""
   },
   "dependencies": {
-    "@0y0/babel-preset-react": "^1.0.1",
+    "@0y0/babel-preset-react": "^1.1.0",
     "babel-plugin-import": "^1.13.3"
-  },
-  "peerDependencies": {
-    "@babel/core": "^7.12.0"
   }
 }
