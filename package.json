@@ -23,5 +23,8 @@
     "eslint": "^7.21.0",
     "lerna": "^3.22.1",
     "prettier": "^2.2.1"
+  },
+  "resolutions": {
+    "@0y0/eslint-plugin-react": "file:./packages/eslint-plugin-react"
   }
 }
