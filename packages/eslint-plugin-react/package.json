@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-plugin-react",
-  "version": "1.2.5",
+  "version": "1.2.6",
   "description": "Common ESLint plugin for React.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -18,6 +18,6 @@
     "test": "node test.js"
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0"
+    "eslint": "^7.0.0"
   }
 }
