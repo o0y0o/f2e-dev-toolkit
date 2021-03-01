@@ -3,9 +3,9 @@
 
 
 "@0y0/babel-preset-react@file:../../babel-preset-react":
-  version "1.1.0"
+  version "1.1.1"
   dependencies:
-    "@babel/core" ">=7.0.0"
+    "@babel/core" "^7.0.0"
     "@babel/plugin-proposal-class-properties" "^7.13.0"
     "@babel/plugin-proposal-decorators" "^7.13.5"
     "@babel/plugin-proposal-do-expressions" "^7.12.13"
@@ -25,16 +25,16 @@
     babel-plugin-transform-react-remove-prop-types "^0.4.24"
 
 "@0y0/webpack-config-react@file:..":
-  version "1.2.0"
+  version "1.2.1"
   dependencies:
-    "@0y0/webpack-config-vanilla" "^1.2.0"
+    "@0y0/webpack-config-vanilla" "^1.2.1"
     "@pmmmwh/react-refresh-webpack-plugin" "^0.4.3"
     react-refresh "^0.9.0"
 
-"@0y0/webpack-config-vanilla@^1.2.0", "@0y0/webpack-config-vanilla@file:../../webpack-config-vanilla":
-  version "1.2.0"
+"@0y0/webpack-config-vanilla@^1.2.1", "@0y0/webpack-config-vanilla@file:../../webpack-config-vanilla":
+  version "1.2.1"
   dependencies:
-    "@babel/core" ">=7.0.0"
+    "@babel/core" "^7.0.0"
     babel-loader "^8.2.2"
     case-sensitive-paths-webpack-plugin "^2.4.0"
     clean-webpack-plugin "^3.0.0"
@@ -75,7 +75,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.13.8.tgz#5b783b9808f15cef71547f1b691f34f8ff6003a6"
   integrity sha512-EaI33z19T4qN3xLXsGf48M2cDqa6ei9tPZlfLdb2HC+e/cFtREiRd8hdSqDbwdLB0/+gLwqJmCYASH0z2bUdog==
 
-"@babel/core@>=7.0.0", "@babel/core@^7.11.1":
+"@babel/core@^7.0.0", "@babel/core@^7.11.1":
   version "7.13.8"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.13.8.tgz#c191d9c5871788a591d69ea1dc03e5843a3680fb"
   integrity sha512-oYapIySGw1zGhEFRd6lzWNLWFX2s5dA/jm+Pw/+59ZdXtjyIuwlXbrId22Md0rgZVop+aVoqow2riXhBLNyuQg==
@@ -2279,9 +2279,9 @@ copy-webpack-plugin@^7.0.0:
     serialize-javascript "^5.0.1"
 
 core-js-compat@^3.8.1, core-js-compat@^3.9.0:
-  version "3.9.0"
-  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.9.0.tgz#29da39385f16b71e1915565aa0385c4e0963ad56"
-  integrity sha512-YK6fwFjCOKWwGnjFUR3c544YsnA/7DoLL0ysncuOJ4pwbriAtOpvM2bygdlcXbvQCQZ7bBU9CL4t7tGl7ETRpQ==
+  version "3.9.1"
+  resolved "https://registry.yarnpkg.com/core-js-compat/-/core-js-compat-3.9.1.tgz#4e572acfe90aff69d76d8c37759d21a5c59bb455"
+  integrity sha512-jXAirMQxrkbiiLsCx9bQPJFA6llDadKMpYrBJQJ3/c4/vsPP/fAf29h24tviRlvwUL6AmY5CHLu2GvjuYviQqA==
   dependencies:
     browserslist "^4.16.3"
     semver "7.0.0"
