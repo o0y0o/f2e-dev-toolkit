@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-config-vanilla",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Common ESLint config for Vanilla JS.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -27,8 +27,7 @@
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1",
-    "eslint-plugin-standard": "^4.1.0"
+    "eslint-plugin-promise": "^4.3.1"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0"
