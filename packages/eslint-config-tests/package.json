@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-config-tests",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Common ESLint config for test scripts.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -21,8 +21,8 @@
     "lint": "eslint index.js"
   },
   "dependencies": {
-    "@babel/core": "^7.0.0",
-    "@babel/eslint-parser": "^7.13.8",
+    "@babel/core": "^7.13.10",
+    "@babel/eslint-parser": "^7.13.10",
     "eslint-config-prettier": "^8.1.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
