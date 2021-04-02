@@ -11,14 +11,14 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "http-proxy-middleware": "^1.0.6"
+    "http-proxy-middleware": "^1.1.0"
   },
   "devDependencies": {
     "@0y0/babel-preset-react": "file:../../babel-preset-react",
     "@0y0/webpack-config-react": "file:../",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "webpack-cli": "^4.5.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "webpack-cli": "^4.6.0",
     "webpack-dev-server": "^3.11.2"
   },
   "resolutions": {
