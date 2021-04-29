@@ -38,7 +38,7 @@ module.exports = function (parameters) {
     devtool: getDevtoolConfig({ isDev, useSourceMap }),
     entry: jsChunks,
     output: getOutputConfig({ isDev, distDir, publicPath, assetPath }),
-    optimization: getOptimizationConfig({ isDev, chunkGroups, useSourceMap }),
+    optimization: getOptimizationConfig({ isDev, chunkGroups }),
     resolve: getResolveConfig({ resolveAlias }),
     module: getModuleConfig({ isDev, srcDir, useSourceMap }),
     plugins: getPluginConfig({
