@@ -7,15 +7,15 @@ function getJsMinimizer() {
   })
 }
 
-function getCssMinimizer({ useSourceMap }) {
-  return new CssMinimizerPlugin({ sourceMap: useSourceMap })
+function getCssMinimizer() {
+  return new CssMinimizerPlugin()
 }
 
-module.exports = function ({ isDev, chunkGroups, useSourceMap }) {
+module.exports = function ({ isDev, chunkGroups }) {
   if (isDev) return { splitChunks: { chunks: 'all' }, runtimeChunk: true }
   return {
     splitChunks: { chunks: 'all', cacheGroups: chunkGroups },
     runtimeChunk: true,
-    minimizer: [getJsMinimizer(), getCssMinimizer({ useSourceMap })]
+    minimizer: [getJsMinimizer(), getCssMinimizer()]
   }
 }
