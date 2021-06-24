@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-config-tests",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "description": "Common ESLint config for test scripts.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",

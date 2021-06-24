@@ -17,7 +17,7 @@
     "lint": "eslint \"{*,example/*,example/src/**/*,lib/**/*}.js\""
   },
   "dependencies": {
-    "@0y0/webpack-config-vanilla": "^1.3.0",
+    "@0y0/webpack-config-vanilla": "^1.3.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
     "react-refresh": "^0.10.0"
   }
