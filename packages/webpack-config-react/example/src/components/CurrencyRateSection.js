@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
 import css from './currencyRateSection.module.css'
 
-function fetchCurrencyRates() {
-  return fetch('/api/currency-rates').then(res => res.json())
+async function fetchCurrencyRates() {
+  const resp = await fetch('/api/currency-rates')
+  const data = await resp.json()
+  const formatRate = ([currency, rate]) => [currency.toUpperCase(), rate]
+  const rates = Object.entries(data.usd).map(formatRate)
+  return { base: 'USD', rates }
 }
 
 function CurrencyRateDetail() {
@@ -20,7 +24,7 @@ function CurrencyRateDetail() {
         <span>{data.base}</span>
       </div>
       <ul>
-        {Object.entries(data.rates).map(([currency, rate]) => (
+        {data.rates.map(([currency, rate]) => (
           <li key={currency}>
             <strong>{currency}: </strong>
             <span>{rate}</span>

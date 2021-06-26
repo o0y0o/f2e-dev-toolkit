@@ -14,7 +14,7 @@ const publicPath = '/'
 const assetPath = '/assets'
 const serviceWorkerPath = '/sw.js'
 const apiProxyPath = '/api/currency-rates'
-const apiTargetUrl = 'https://api.ratesapi.io/api/latest'
+const apiTargetUrl = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json'
 
 module.exports = createWebpackConfig({
   isDev,
