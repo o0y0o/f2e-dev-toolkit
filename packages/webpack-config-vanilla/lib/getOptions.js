@@ -24,7 +24,7 @@ module.exports = function ({
 }) {
   publicPath = `${publicPath}/`
     .replace(/^(?!\w+:\/\/)/, '/')
-    .replace(/\/+/g, '/')
+    .replace(/(:\/)?\/+/g, '$1/')
   assetPath = `${assetPath}/`
     .replace(/\/+/g, '/')
     .replace(/^\//, '')
