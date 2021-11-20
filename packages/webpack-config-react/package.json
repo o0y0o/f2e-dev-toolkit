@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@0y0/webpack-config-vanilla": "^1.4.0",
-    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.5.2",
     "react-refresh": "^0.10.0"
   }
 }
