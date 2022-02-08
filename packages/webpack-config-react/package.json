@@ -1,6 +1,6 @@
 {
   "name": "@0y0/webpack-config-react",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Common webpack config for React.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -17,7 +17,7 @@
     "lint": "eslint \"{*,example/*,example/src/**/*,lib/**/*}.js\""
   },
   "dependencies": {
-    "@0y0/webpack-config-vanilla": "^1.5.0",
+    "@0y0/webpack-config-vanilla": "^1.5.1",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.4",
     "react-refresh": "^0.11.0"
   }

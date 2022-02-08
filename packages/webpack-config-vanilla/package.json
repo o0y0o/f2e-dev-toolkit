@@ -1,6 +1,6 @@
 {
   "name": "@0y0/webpack-config-vanilla",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "Common webpack config.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",

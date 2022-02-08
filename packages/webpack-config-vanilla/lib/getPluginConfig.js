@@ -7,7 +7,7 @@ const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin')
 const webpack = require('webpack')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const ManifestPlugin = require('webpack-manifest-plugin').WebpackManifestPlugin
+const { WebpackManifestPlugin } = require('webpack-manifest-plugin')
 const WorkboxPlugin = require('workbox-webpack-plugin')
 const getHtmlMinifierConfig = require('./getHtmlMinifierConfig')
 
@@ -70,7 +70,7 @@ module.exports = function ({
         })
     ),
     new InterpolateHtmlPlugin(HtmlPlugin, { PUBLIC_PATH: publicPath }),
-    new ManifestPlugin({ fileName: 'asset-manifest.json' }),
+    new WebpackManifestPlugin({ fileName: 'asset-manifest.json' }),
     new ModuleNotFoundPlugin(rootDir),
     new webpack.DefinePlugin(stringify(variables)),
     new webpack.IgnorePlugin({
@@ -79,9 +79,7 @@ module.exports = function ({
     }),
     new CopyPlugin({ patterns: [staticDir] })
   ]
-  if (isDev) {
-    plugins.push(new webpack.HotModuleReplacementPlugin())
-  } else {
+  if (!isDev) {
     plugins.push(
       getCssExtractPlugin({ assetPath }),
       getWorkboxPlugin({ appName, serviceWorkerPath, workboxOptions })
