@@ -9,7 +9,8 @@ app.use(express.static(path.join(__dirname, 'dist')))
 app.use(
   '/api/currency-rates',
   createProxyMiddleware({
-    target: 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json',
+    target:
+      'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json',
     pathRewrite: { '^/api/currency-rates': '' },
     changeOrigin: true
   })

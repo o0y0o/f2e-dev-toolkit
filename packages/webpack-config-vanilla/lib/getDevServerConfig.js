@@ -4,20 +4,24 @@ const getStatsConfig = require('./getStatsConfig')
 
 module.exports = function ({ publicPath, host, port, proxy }) {
   return {
-    stats: getStatsConfig(),
-    contentBase: false,
-    host,
-    port: parseInt(port, 10),
+    host: host || 'local-ip',
+    port: +port || 'auto',
     proxy,
-    publicPath,
-    historyApiFallback: true,
-    hot: true,
     compress: true,
-    clientLogLevel: 'none',
-    overlay: false,
-    before: function (app, server) {
-      app.use(evalSourceMapMiddleware(server))
-      app.use(errorOverlayMiddleware())
+    hot: true,
+    historyApiFallback: true,
+    static: false,
+    client: {
+      logging: 'none',
+      overlay: false
+    },
+    devMiddleware: {
+      publicPath,
+      stats: getStatsConfig()
+    },
+    onBeforeSetupMiddleware: function (devServer) {
+      devServer.app.use(evalSourceMapMiddleware(devServer))
+      devServer.app.use(errorOverlayMiddleware())
     }
   }
 }
