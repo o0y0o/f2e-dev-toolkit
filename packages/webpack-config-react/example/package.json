@@ -10,16 +10,16 @@
     "start": "node ./index.js"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "http-proxy-middleware": "^2.0.0"
+    "express": "^4.17.2",
+    "http-proxy-middleware": "^2.0.3"
   },
   "devDependencies": {
     "@0y0/babel-preset-react": "file:../../babel-preset-react",
     "@0y0/webpack-config-react": "file:../",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
   },
   "resolutions": {
     "@0y0/webpack-config-vanilla": "file:../../webpack-config-vanilla"
