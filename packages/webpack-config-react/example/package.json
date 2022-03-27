@@ -10,8 +10,8 @@
     "start": "node ./index.js"
   },
   "dependencies": {
-    "express": "^4.17.2",
-    "http-proxy-middleware": "^2.0.3"
+    "express": "^4.17.3",
+    "http-proxy-middleware": "^2.0.4"
   },
   "devDependencies": {
     "@0y0/babel-preset-react": "file:../../babel-preset-react",
