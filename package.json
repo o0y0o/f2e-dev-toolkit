@@ -18,11 +18,11 @@
     "@0y0/babel-preset-react": "file:./packages/babel-preset-react",
     "@0y0/eslint-config-react": "file:./packages/eslint-config-react",
     "@0y0/eslint-config-vanilla": "file:./packages/eslint-config-vanilla",
-    "@babel/core": "^7.17.8",
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint": "^8.12.0",
-    "lerna": "^4.0.0",
-    "prettier": "^2.6.1"
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint": "^8.32.0",
+    "lerna": "^6.4.1",
+    "prettier": "^2.8.3"
   },
   "resolutions": {
     "@0y0/eslint-plugin-react": "file:./packages/eslint-plugin-react"

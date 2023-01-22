@@ -1,6 +1,6 @@
 {
   "name": "@0y0/eslint-config-tests",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "description": "Common ESLint config for test scripts.",
   "main": "index.js",
   "repository": "https://github.com/o0y0o/f2e-dev-toolkit",
@@ -21,13 +21,13 @@
     "lint": "eslint index.js"
   },
   "dependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/eslint-parser": "^7.17.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0"
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-promise": "^6.1.1"
   },
   "peerDependencies": {
     "eslint": "^8.0.0"
