@@ -24,7 +24,7 @@ const webpackConfig = createWebpackConfig(options)
 | **`rootDir`** | `string` (required) | | Project directory |
 | **`srcDir`** | `string` | `{rootDir}/src` | Source directory |
 | **`distDir`** | `string` | `{rootDir}/dist` | Distribution directory |
-| **`staticDir`** | `string` | `{rootDir}/src/static` | Static directory |
+| **`staticDir`** | `string`/`string[]`/`false` | `{rootDir}/src/static` | Static directory |
 | **`jsChunks`** | `object` | `{ app: '{rootDir}/src/index.js' }` | JS entries |
 | **`htmlChunks`** | `object` | `{ app: '{rootDir}/src/index.html' }` | HTML entries |
 | **`publicPath`** | `string` | `/` | Public path |
@@ -32,9 +32,12 @@ const webpackConfig = createWebpackConfig(options)
 | **`serviceWorkerPath`** | `string` | `/sw.js` | Service worker path |
 | **`resolveAlias`** | `object` | | Module aliases. See [webpack doc](https://webpack.js.org/configuration/resolve/#resolvealias) for details |
 | **`chunkGroups`** | `object` | | Cache groups config of split chunk plugin. See [webpack doc](https://webpack.js.org/plugins/split-chunks-plugin/#splitchunkscachegroups) for details |
+| **`runtimeChunk`** | `bool`/`object` | `true` | Optimization runtime chunk config. See [webpack doc](https://webpack.js.org/configuration/optimization/#optimizationruntimechunk) |
 | **`variables`** | `object` | `{}` | Global variables |
+| **`manifestOptions`** | `object` | Manifest options. See [webpack-manifest-plugin doc](https://github.com/shellscape/webpack-manifest-plugin) for details |
 | **`workboxOptions`** | `object` | | Workbox options. See [workbox doc](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW#GenerateSW) for details |
 | **`useSourceMap`** | `boolean` | `false` | Whether or not enable source map |
+| **`useWorkbox`** | `boolean` | `true` | Whether or not enable workbox plugin |
 | **`useWebpackAnalyzer`** | `boolean` | `false` | Whether or not enable webpack-bundle-analyzer plugin |
 | **`host`** | `string` | `localhost` | Dev server host |
 | **`port`** | `number` | `8080` | Dev server port |

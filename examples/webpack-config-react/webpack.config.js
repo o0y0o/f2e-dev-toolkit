@@ -1,6 +1,6 @@
 const path = require('path')
 const createWebpackConfig = require('@0y0/webpack-config-react')
-const pkg = require('../package')
+const pkg = require('./package')
 
 const isDev = process.env.NODE_ENV !== 'production'
 const rootDir = __dirname
@@ -15,7 +15,7 @@ const assetPath = '/assets'
 const serviceWorkerPath = '/sw.js'
 const apiProxyPath = '/api/currency-rates'
 const apiTargetUrl =
-  'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json'
+  'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.min.json'
 
 module.exports = createWebpackConfig({
   isDev,
@@ -56,14 +56,14 @@ module.exports = createWebpackConfig({
     ]
   },
   useSourceMap: true,
-  useWebpackAnalyzer: false,
   host: 'localhost',
   port: 8080,
-  proxy: {
-    [apiProxyPath]: {
+  proxy: [
+    {
+      context: [apiProxyPath],
       target: apiTargetUrl,
       pathRewrite: { [`^${apiProxyPath}`]: '' },
       changeOrigin: true
     }
-  }
+  ]
 })

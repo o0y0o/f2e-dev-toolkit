@@ -19,9 +19,12 @@ module.exports = function ({ publicPath, host, port, proxy }) {
       publicPath,
       stats: getStatsConfig()
     },
-    onBeforeSetupMiddleware: function (devServer) {
-      devServer.app.use(evalSourceMapMiddleware(devServer))
-      devServer.app.use(errorOverlayMiddleware())
+    setupMiddlewares: function (middlewares, devServer) {
+      middlewares.unshift(
+        evalSourceMapMiddleware(devServer),
+        errorOverlayMiddleware()
+      )
+      return middlewares
     }
   }
 }

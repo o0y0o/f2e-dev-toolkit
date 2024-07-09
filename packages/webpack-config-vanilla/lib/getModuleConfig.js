@@ -35,7 +35,7 @@ function getCssRule({ isDev, useSourceMap }) {
 }
 
 function getImageRule() {
-  return { test: [/\.(gif|jpe?g|png|svg)$/], type: 'asset' }
+  return { test: [/\.(gif|jpe?g|png|svg|webp)$/], type: 'asset' }
 }
 
 function getFontRule() {

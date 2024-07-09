@@ -23,10 +23,13 @@ module.exports = function (parameters) {
     serviceWorkerPath,
     resolveAlias,
     chunkGroups,
+    runtimeChunk = true,
     variables,
+    manifestOptions,
     workboxOptions,
-    useSourceMap,
-    useWebpackAnalyzer,
+    useSourceMap = false,
+    useWorkbox = true,
+    useWebpackAnalyzer = false,
     host,
     port,
     proxy
@@ -38,7 +41,7 @@ module.exports = function (parameters) {
     devtool: getDevtoolConfig({ isDev, useSourceMap }),
     entry: jsChunks,
     output: getOutputConfig({ isDev, distDir, publicPath, assetPath }),
-    optimization: getOptimizationConfig({ isDev, chunkGroups }),
+    optimization: getOptimizationConfig({ isDev, chunkGroups, runtimeChunk }),
     resolve: getResolveConfig({ resolveAlias }),
     module: getModuleConfig({ isDev, srcDir, useSourceMap }),
     plugins: getPluginConfig({
@@ -51,7 +54,9 @@ module.exports = function (parameters) {
       assetPath,
       serviceWorkerPath,
       variables,
+      manifestOptions,
       workboxOptions,
+      useWorkbox,
       useWebpackAnalyzer
     }),
     devServer: getDevServerConfig({ publicPath, host, port, proxy })

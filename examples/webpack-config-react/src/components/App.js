@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react'
-import css from './app.module.css'
+import * as css from './app.module.css'
 
-const CurrencyRateSection = lazy(() =>
-  import('@src/components/CurrencyRateSection')
+const CurrencyRateSection = lazy(
+  () => import('@src/components/CurrencyRateSection')
 )
 
 export default function App() {

@@ -1,11 +1,8 @@
-import { render } from 'react-dom'
-import App from '@src/components/App'
 import './index.css'
+import App from '@src/components/App'
+import { createRoot } from 'react-dom/client'
 
-const rootElement = document.getElementById('root')
-const renderApp = () => render(<App />, rootElement)
-
-renderApp()
+createRoot(document.getElementById('root')).render(<App />)
 
 if (app.env.ENABLE_SERVICE_WORKER && 'serviceWorker' in navigator) {
   window.addEventListener('load', () => {
