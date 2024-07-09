@@ -22,7 +22,7 @@
     "@0y0/webpack-config-vanilla": "file:./packages/webpack-config-vanilla",
     "@babel/core": "^7.24.7",
     "@babel/eslint-parser": "^7.24.7",
-    "eslint": "^8.56.0",
+    "eslint": "^9.0.0",
     "lerna": "^8.1.6",
     "prettier": "^3.3.2",
     "webpack-cli": "^5.1.4",
