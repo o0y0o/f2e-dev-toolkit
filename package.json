@@ -18,13 +18,14 @@
     "@0y0/babel-preset-react": "file:./packages/babel-preset-react",
     "@0y0/eslint-config-react": "file:./packages/eslint-config-react",
     "@0y0/eslint-config-vanilla": "file:./packages/eslint-config-vanilla",
-    "@babel/core": "^7.20.12",
-    "@babel/eslint-parser": "^7.19.1",
-    "eslint": "^8.32.0",
-    "lerna": "^7.0.0",
-    "prettier": "^3.0.0"
-  },
-  "resolutions": {
-    "@0y0/eslint-plugin-react": "file:./packages/eslint-plugin-react"
+    "@0y0/webpack-config-react": "file:./packages/webpack-config-react",
+    "@0y0/webpack-config-vanilla": "file:./packages/webpack-config-vanilla",
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "eslint": "^8.56.0",
+    "lerna": "^8.1.6",
+    "prettier": "^3.3.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }

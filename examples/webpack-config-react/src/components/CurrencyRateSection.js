@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
-import css from './currencyRateSection.module.css'
+import * as css from './currencyRateSection.module.css'
 
 async function fetchCurrencyRates() {
-  const resp = await fetch('/api/currency-rates')
+  const resp = await fetch('/api/currency-rates', {
+    headers: { 'Content-Type': 'application/json' }
+  })
   const data = await resp.json()
   const formatRate = ([currency, rate]) => [currency.toUpperCase(), rate]
   const rates = Object.entries(data.usd).map(formatRate)

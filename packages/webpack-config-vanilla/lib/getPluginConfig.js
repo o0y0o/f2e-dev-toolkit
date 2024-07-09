@@ -38,6 +38,7 @@ function getWorkboxPlugin({ appName, serviceWorkerPath, workboxOptions }) {
     swDest: serviceWorkerPath.replace(/^\//, ''),
     clientsClaim: true,
     skipWaiting: true,
+    maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
     navigateFallback: '/index.html',
     navigateFallbackDenylist: [/^\/api/, /\/[^/]+\.[^/]+$/],
     ...workboxOptions
@@ -54,37 +55,64 @@ module.exports = function ({
   assetPath,
   serviceWorkerPath,
   variables,
+  manifestOptions,
   workboxOptions,
+  useWorkbox,
   useWebpackAnalyzer
 }) {
   const plugins = [
     new CleanPlugin(),
     new CaseSensitivePathsPlugin(),
-    ...Object.entries(htmlChunks).map(
-      ([name, html]) =>
-        new HtmlPlugin({
-          chunks: [name],
-          minify: !isDev && getHtmlMinifierConfig(),
-          filename: /([^/]+)$/.exec(html)[1],
-          template: html
-        })
-    ),
+    ...Object.entries(htmlChunks).map(([name, options]) => {
+      let html
+      if (typeof options === 'string') html = options
+      else ({ html, ...options } = options)
+      return new HtmlPlugin({
+        chunks: [name],
+        minify: !isDev && getHtmlMinifierConfig(),
+        filename: /([^/]+)$/.exec(html)[1],
+        template: html,
+        ...options
+      })
+    }),
     new InterpolateHtmlPlugin(HtmlPlugin, { PUBLIC_PATH: publicPath }),
-    new WebpackManifestPlugin({ fileName: 'asset-manifest.json' }),
     new ModuleNotFoundPlugin(rootDir),
     new webpack.DefinePlugin(stringify(variables)),
     new webpack.IgnorePlugin({
       resourceRegExp: /^\.\/locale$/,
       contextRegExp: /moment$/
-    }),
-    new CopyPlugin({ patterns: [staticDir] })
+    })
   ]
-  if (!isDev) {
+
+  if (manifestOptions !== false) {
     plugins.push(
-      getCssExtractPlugin({ assetPath }),
-      getWorkboxPlugin({ appName, serviceWorkerPath, workboxOptions })
+      new WebpackManifestPlugin({
+        fileName: 'asset-manifest.json',
+        ...manifestOptions
+      })
     )
-    if (useWebpackAnalyzer) plugins.push(new BundleAnalyzerPlugin())
+  }
+
+  if (staticDir !== false) {
+    plugins.push(new CopyPlugin({ patterns: [staticDir].flat() }))
+  }
+
+  if (!isDev) {
+    plugins.push(getCssExtractPlugin({ assetPath }))
+
+    if (useWorkbox) {
+      plugins.push(
+        getWorkboxPlugin({
+          appName,
+          serviceWorkerPath,
+          workboxOptions
+        })
+      )
+    }
+
+    if (useWebpackAnalyzer) {
+      plugins.push(new BundleAnalyzerPlugin())
+    }
   }
   return plugins
 }

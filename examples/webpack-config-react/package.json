@@ -1,0 +1,22 @@
+{
+  "name": "webpack-config-react-example",
+  "version": "1.0.0",
+  "description": "A React example app to demo @0y0/webpack-config-react.",
+  "license": "MIT",
+  "scripts": {
+    "clear": "rm -rf dist",
+    "build": "NODE_ENV=production webpack",
+    "dev": "webpack serve",
+    "start": "node ./index.js",
+    "format": "prettier --write \"{*,src/**/*,lib/**/*}.js\"",
+    "lint": "eslint \"{*,src/**/*,lib/**/*}.js\""
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
