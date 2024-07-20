@@ -30,6 +30,6 @@
     "eslint-plugin-promise": "^6.4.0"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.0.0 || ^9.0.0"
   }
 }
